@@ -1,0 +1,27 @@
+{
+  "name": "PicoMail",
+  "authors": [
+    "dntstp <pustolovskiy@gmail.com>"
+  ],
+  "description": "Simple plugin to access ftp folder in HTML page",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "jquery",
+    "ftp",
+    "php"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.12.0"
+  }
+}
