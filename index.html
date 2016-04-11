@@ -5,20 +5,20 @@
     <title>Mail</title>
 </head>
 <body>
-<form action="#" id="form" method="post">
+<form action="index.html" id="myform" method="post">
     <input type="text" hidden name="project_name" value="test">
     <input type="text" hidden name="admin_email" value="pustolovskiy@gmail.com">
     <input type="text" hidden name="form_subject" value="test_form">
     <input type="text" name="heading"><br>
     <textarea name="text"></textarea><br>
-    <input type="submit"><br>
+    <input type="submit" value="SEND">
 </form>
 
 <script src="libs/jquery/dist/jquery.min.js"></script>
 <script src="dist/pico-mail.js"></script>
 <script>
     $(document).ready(function(){
-        $('form').pico_mail('dist/mail.php');
+        $('#myform').pico_mail('dist/mail.php');
     });
 </script>
 </body>

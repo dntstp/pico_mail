@@ -1,23 +1,23 @@
 ;(function ($) {
     $.fn.pico_mail = function (mailpath) {
         mailpath = typeof mailpath !== 'undefined' ? mailpath : 'mail.php';
-        var el = $(this);
-        el.submit(function () {
-            alert('ss');
-            console.log(el);
+        var t = $(this);
+        t.submit(function (elem) {
+            var th = $(this);
+            elem.preventDefault();
             $.ajax({
-                type: "POST",
-                url: mailpath, 
-                data: el.serialize()
+                type: "GET",
+                url: mailpath,
+                data: th.serialize()
             }).done(function () {
                 alert("Thank you!");
                 setTimeout(function () {
-                    el.trigger("reset");
+                    th.trigger("reset");
                 }, 1000);
             }).error(function (e) {
                 conlole.log(e);
             });
         });
-        return false;
+
     }
 })(jQuery);
