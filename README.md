@@ -5,7 +5,7 @@ Sipmle plugin to access send email using jquery via PHP
 ##Usage
     <form action="#" id="myform" method="post">
         <input type="text" hidden name="project_name" value="test"> <-- Requied -->
-        <input type="text" hidden name="admin_email" value="pustolovskiy@gmail.com"> <-- Requied -->
+        <input type="text" hidden name="admin_email" value="test@test.com"> <-- Requied -->
         <input type="text" hidden name="form_subject" value="test_form"> <-- Requied -->
         <input type="submit" value="SEND">
     </form>
